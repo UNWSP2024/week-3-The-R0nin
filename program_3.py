@@ -16,7 +16,8 @@ def weight_conversion(weight):
 
     else:
          shippingCost == 0.0
-
-         return shippingCost
+     
+    return shippingCost 
+     
 shippingCost = weight_conversion(float(weight))
 print ('Shipping charge: $', shippingCost)
