@@ -8,7 +8,6 @@ elif Order == "chilidog":
     Order_Price = 4.50
     toppings = print(input(str("Enter topping: ")))
 
-toppings_price = 0.0
     if toppings == "cheese":
         toppings_price = int(0.50)
 
