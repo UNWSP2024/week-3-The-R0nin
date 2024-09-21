@@ -23,9 +23,10 @@ elif toppings == "none":
     toppings_price = int(0.0)
 
 
-total_tax = float(input((int(Order_Price) + int(toppings_price)) * 0.07))
-total_price = float(input(int(Order_Price) + int(toppings_price) + int(total_tax)))
+total_tax = (Order_Price + toppings_price) * 0.07
+total_price = (Order_Price + toppings_price)
+final_total = (total_price + total_tax)
 
-print("Hotdog cost is: ", Order_Price)
+print("Hotdog cost is: ", total_price)
 print("The taxt is: ", total_tax)
-print("Your total is: ", total_price)
+print("Your total is: ", final_total)
