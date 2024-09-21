@@ -9,6 +9,7 @@ elif Order == "chilidog":
     Order_Price = 4.50
 
 toppings = print(input(str("Enter topping: ")))
+toppings_price = 0.0
 if toppings == "cheese":
     toppings_price = int(0.50)
 
@@ -22,8 +23,9 @@ elif toppings == "none":
     toppings_price = int(0.0)
 
 
-total_price = float(input((int(Order_Price) + int(toppings_price)) * 0.07))
+total_tax = float(input((int(Order_Price) + int(toppings_price)) * 0.07))
+total_price = float(input(int(Order_Price) + int(toppings_price) + int(total_tax)))
 
-print("Hotdog cost is: ", Order)
-print("The taxt is: 7%")
+print("Hotdog cost is: ", Order_Price)
+print("The taxt is: ", total_tax)
 print("Your total is: ", total_price)
